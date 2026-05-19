@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Wayder | Senior Web Developer</title>
+    <meta
+      name="description"
+      data-i18n="meta.description"
+      content="John Wayder — Senior Web Developer Full Stack com mais de 12 anos de experiência em Node.js, React, TypeScript, AWS e arquiteturas serverless."
+    />
+    <meta name="author" content="John Wayder" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href="https://johnwayder.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="John Wayder | Senior Web Developer" />
+    <meta
+      property="og:description"
+      content="Senior Web Developer Full Stack com mais de 12 anos de experiência."
+    />
+    <meta property="og:url" content="https://johnwayder.com/" />
+    <meta
+      property="og:image"
+      content="https://johnwayder.com/assets/img/avatar.png"
+    />
+
+    <link rel="icon" type="image/png" href="assets/img/avatar-favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="logo">
+          <i class="fa-solid fa-code"></i>
+          <span>John Wayder</span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a>
+          <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <a href="#experience" class="nav-link" data-i18n="nav.experience"
+            >Experiência</a
+          >
+          <a href="#highlights" class="nav-link" data-i18n="nav.highlights"
+            >Destaques</a
+          >
+          <a href="#contact" class="nav-link" data-i18n="nav.contact"
+            >Contato</a
+          >
+        </nav>
+
+        <div class="nav-actions">
+          <div class="lang-switch" id="langSwitch">
+            <button
+              class="lang-toggle"
+              id="langToggle"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-label="Trocar idioma"
+            >
+              <span class="fi fi-br" id="langFlag"></span>
+              <span id="langLabel">PT</span>
+              <i class="fa-solid fa-chevron-down lang-caret"></i>
+            </button>
+            <ul class="lang-menu" id="langMenu" role="menu">
+              <li>
+                <button
+                  type="button"
+                  class="lang-option"
+                  data-lang="pt"
+                  role="menuitem"
+                >
+                  <span class="fi fi-br"></span>
+                  <span>Português</span>
+                  <i class="fa-solid fa-check lang-check"></i>
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="lang-option"
+                  data-lang="en"
+                  role="menuitem"
+                >
+                  <span class="fi fi-us"></span>
+                  <span>English</span>
+                  <i class="fa-solid fa-check lang-check"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="nav-burger"
+            id="navBurger"
+            type="button"
+            aria-label="Menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-text" data-aos="fade-right">
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span
+            ><span data-i18n="hero.eyebrow">Olá, eu sou</span>
+          </p>
+          <h1 class="hero-title">John Wayder</h1>
+          <h2 class="hero-role">
+            <span data-i18n="hero.rolePrefix">Sou um</span>
+            <span class="rotating" id="rotatingRole"></span>
+          </h2>
+          <p class="hero-desc" data-i18n="hero.desc">
+            Desenvolvedor Full Stack com mais de 12 anos construindo aplicações
+            web escaláveis — do frontend em React e TypeScript a microsserviços
+            serverless em Node.js sobre a AWS.
+          </p>
+          <div class="hero-cta">
+            <a
+              href="#experience"
+              class="btn btn-primary"
+              data-i18n="hero.ctaPrimary"
+              >Ver experiência</a
+            >
+            <a
+              href="#contact"
+              class="btn btn-ghost"
+              data-i18n="hero.ctaSecondary"
+              >Entrar em contato</a
+            >
+          </div>
+          <div class="hero-social">
+            <a
+              href="https://github.com/johnwayder"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="mailto:john.wayder@gmail.com" aria-label="E-mail"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a
+              href="https://wa.me/5562985440767"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="hero-avatar" data-aos="fade-left" data-aos-delay="150">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring"></div>
+          <img
+            src="assets/img/avatar.png"
+            alt="John Wayder"
+            class="avatar-img"
+          />
+          <div class="avatar-badge avatar-badge-1">
+            <i class="fa-brands fa-node-js"></i>
+          </div>
+          <div class="avatar-badge avatar-badge-2">
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="avatar-badge avatar-badge-3">
+            <i class="fa-brands fa-aws"></i>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Rolar para baixo">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-tag" data-i18n="about.tag">Sobre</span>
+          <h2 class="section-title" data-i18n="about.title">
+            Quem está por trás do código
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text" data-aos="fade-up">
+            <p data-i18n="about.p1">
+              Sou Engenheiro da Computação e desenvolvedor Full Stack Sênior com
+              mais de 12 anos de carreira. Já atuei em projetos para os setores
+              bancário, jurídico, de criptoativos, financeiro e educacional,
+              sempre focado em entregar software confiável, performático e
+              seguro.
+            </p>
+            <p data-i18n="about.p2">
+              Minha base técnica vai do frontend moderno em React e TypeScript
+              ao backend em Node.js, com forte experiência em arquiteturas
+              serverless na AWS, testes automatizados (TDD) e pipelines de
+              CI/CD.
+            </p>
+            <p data-i18n="about.p3">
+              Também já realizei diversas integrações com Inteligência
+              Artificial, incluindo a construção de agentes de IA diretamente
+              via código — sem ferramentas no-code ou low-code.
+            </p>
+          </div>
+          <div class="about-cards">
+            <div class="info-card" data-aos="fade-up" data-aos-delay="50">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <h4 data-i18n="about.card1Title">Formação</h4>
+                <p data-i18n="about.card1Text">Engenharia da Computação</p>
+              </div>
+            </div>
+            <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4 data-i18n="about.card2Title">Localização</h4>
+                <p data-i18n="about.card2Text">Goiânia, Brasil — Remoto</p>
+              </div>
+            </div>
+            <div class="info-card" data-aos="fade-up" data-aos-delay="150">
+              <i class="fa-solid fa-layer-group"></i>
+              <div>
+                <h4 data-i18n="about.card3Title">Especialidade</h4>
+                <p data-i18n="about.card3Text">Full Stack & Arquitetura Serverless</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat" data-aos="zoom-in">
+          <span class="stat-num" data-count="12">0</span
+          ><span class="stat-plus">+</span>
+          <p data-i18n="stats.years">Anos de experiência</p>
+        </div>
+        <div class="stat" data-aos="zoom-in" data-aos-delay="80">
+          <span class="stat-num" data-count="16">0</span
+          ><span class="stat-plus">+</span>
+          <p data-i18n="stats.tech">Tecnologias dominadas</p>
+        </div>
+        <div class="stat" data-aos="zoom-in" data-aos-delay="160">
+          <span class="stat-num" data-count="3">0</span>
+          <p data-i18n="stats.hackathons">Hackathons mentorados</p>
+        </div>
+        <div class="stat" data-aos="zoom-in" data-aos-delay="240">
+          <span class="stat-num" data-count="5">0</span>
+          <p data-i18n="stats.sectors">Setores atendidos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-tag" data-i18n="skills.tag">Skills</span>
+          <h2 class="section-title" data-i18n="skills.title">
+            Tecnologias que utilizo
+          </h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="fade-up">
+            <div class="skill-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3 data-i18n="skills.frontend">Frontend</h3>
+            <div class="tags">
+              <span>React</span><span>Next.js</span><span>Vue.js</span>
+              <span>TypeScript</span><span>JavaScript</span><span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+            <h3 data-i18n="skills.backend">Backend</h3>
+            <div class="tags">
+              <span>Node.js</span><span>PHP</span><span>Laravel</span>
+              <span>Python</span><span>REST APIs</span>
+            </div>
+          </div>
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+            <h3 data-i18n="skills.cloud">Cloud &amp; DevOps</h3>
+            <div class="tags">
+              <span>AWS Lambda</span><span>API Gateway</span
+              ><span>DynamoDB</span> <span>S3</span><span>CloudFormation</span
+              ><span>CDK</span> <span>GitHub Actions</span><span>Git</span>
+            </div>
+          </div>
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="180">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <h3 data-i18n="skills.databases">Bancos de dados</h3>
+            <div class="tags">
+              <span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span>
+              <span>DynamoDB</span>
+            </div>
+          </div>
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="skill-icon">
+              <i class="fa-solid fa-vial-circle-check"></i>
+            </div>
+            <h3 data-i18n="skills.quality">Qualidade &amp; Busca</h3>
+            <div class="tags">
+              <span>Jest</span><span>TDD</span>
+              <span data-i18n="skills.integrationTests"
+                >Testes de integração</span
+              >
+              <span>ElasticSearch</span>
+            </div>
+          </div>
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3 data-i18n="skills.ai">Integrações com IA</h3>
+            <div class="tags">
+              <span data-i18n="skills.aiAgents">Agentes de IA</span>
+              <span data-i18n="skills.aiApis">APIs de IA</span>
+              <span data-i18n="skills.aiCode">Via código</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-tag" data-i18n="exp.tag">Experiência</span>
+          <h2 class="section-title" data-i18n="exp.title">
+            Desafios técnicos que já enfrentei
+          </h2>
+          <p class="section-sub" data-i18n="exp.sub">
+            Áreas de atuação acumuladas ao longo da carreira.
+          </p>
+        </div>
+
+        <div class="exp-grid">
+          <article class="exp-card" data-aos="fade-up">
+            <i class="fa-solid fa-cubes"></i>
+            <h3 data-i18n="exp.c1Title">Arquitetura serverless</h3>
+            <p data-i18n="exp.c1Text">
+              Desenvolvimento de microsserviços serverless em Node.js, com
+              frontend em React e TypeScript, para aplicações escaláveis.
+            </p>
+          </article>
+          <article class="exp-card" data-aos="fade-up" data-aos-delay="60">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3 data-i18n="exp.c2Title">Buscas complexas</h3>
+            <p data-i18n="exp.c2Text">
+              Estruturação de mecanismos de busca complexos — múltiplos filtros
+              combinados, ranqueamento por relevância e respostas rápidas mesmo
+              sobre grandes volumes de dados.
+            </p>
+          </article>
+          <article class="exp-card" data-aos="fade-up" data-aos-delay="120">
+            <i class="fa-solid fa-rocket"></i>
+            <h3 data-i18n="exp.c3Title">CI/CD e automação</h3>
+            <p data-i18n="exp.c3Text">
+              Automação de deploy e pipelines de CI/CD com GitHub Actions, AWS
+              CloudFormation, CDK e CodePipeline.
+            </p>
+          </article>
+          <article class="exp-card" data-aos="fade-up">
+            <i class="fa-solid fa-building-columns"></i>
+            <h3 data-i18n="exp.c4Title">Sistemas financeiros</h3>
+            <p data-i18n="exp.c4Text">
+              Sistemas web para os setores bancário, de criptoativos e
+              financeiro, com foco em segurança e confiabilidade.
+            </p>
+          </article>
+          <article class="exp-card" data-aos="fade-up" data-aos-delay="60">
+            <i class="fa-solid fa-users-gear"></i>
+            <h3 data-i18n="exp.c5Title">Liderança técnica</h3>
+            <p data-i18n="exp.c5Text">
+              Liderança e supervisão de equipes de desenvolvimento, definindo
+              padrões de código e boas práticas.
+            </p>
+          </article>
+          <article class="exp-card" data-aos="fade-up" data-aos-delay="120">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3 data-i18n="exp.c6Title">Qualidade &amp; testes</h3>
+            <p data-i18n="exp.c6Text">
+              Testes unitários e de integração com Jest sob abordagem TDD,
+              garantindo entregas estáveis.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="highlights">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-tag" data-i18n="high.tag">Destaques</span>
+          <h2 class="section-title" data-i18n="high.title">
+            Além do desenvolvimento
+          </h2>
+        </div>
+
+        <div class="high-grid">
+          <article class="high-card high-card-feature" data-aos="fade-up">
+            <div class="high-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3 data-i18n="high.aiTitle">
+              Integrações com Inteligência Artificial
+            </h3>
+            <p data-i18n="high.aiText">
+              Já desenvolvi diversas integrações com IA, incluindo a construção
+              de agentes de IA diretamente via código — sem depender de
+              plataformas no-code ou low-code.
+            </p>
+          </article>
+          <article class="high-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="high-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>NASA Space Apps Challenge</h3>
+            <p data-i18n="high.nasaText">
+              Mentor convidado no hackathon internacional da NASA, apoiando
+              equipes na criação de soluções para desafios do planeta e do
+              espaço.
+            </p>
+          </article>
+          <article class="high-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="high-icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Climathon São Paulo</h3>
+            <p data-i18n="high.climaText">
+              Mentor convidado em evento focado no desenvolvimento de ideias
+              locais para enfrentar desafios climáticos.
+            </p>
+          </article>
+          <article class="high-card" data-aos="fade-up" data-aos-delay="180">
+            <div class="high-icon">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h3>UNODC Coding4Integrity</h3>
+            <p data-i18n="high.unodcText">
+              Mentor convidado no hackathon da ONU sobre Drogas e Crime, voltado
+              à promoção da integridade corporativa no Brasil.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-tag" data-i18n="contact.tag">Contato</span>
+          <h2 class="section-title" data-i18n="contact.title">
+            Vamos conversar
+          </h2>
+          <p class="section-sub" data-i18n="contact.sub">
+            Escolha o canal que preferir para falar comigo.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <a
+            href="https://github.com/johnwayder"
+            target="_blank"
+            rel="noopener"
+            class="contact-card"
+            data-aos="fade-up"
+          >
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <span>github.com/johnwayder</span>
+          </a>
+          <a
+            href="mailto:john.wayder@gmail.com"
+            class="contact-card"
+            data-aos="fade-up"
+            data-aos-delay="80"
+          >
+            <i class="fa-solid fa-envelope"></i>
+            <h3 data-i18n="contact.email">E-mail</h3>
+            <span>john.wayder@gmail.com</span>
+          </a>
+          <a
+            href="https://wa.me/5562985440767"
+            target="_blank"
+            rel="noopener"
+            class="contact-card"
+            data-aos="fade-up"
+            data-aos-delay="160"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>WhatsApp</h3>
+            <span>+55 62 98544 0767</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="#home" class="logo">
+          <i class="fa-solid fa-code"></i>
+          <span>John Wayder</span>
+        </a>
+        <div class="footer-social">
+          <a
+            href="https://github.com/johnwayder"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:john.wayder@gmail.com" aria-label="E-mail"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a
+            href="https://wa.me/5562985440767"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> John Wayder ·
+          <span data-i18n="footer.rights">Senior Web Developer</span>
+        </p>
+      </div>
+    </footer>
+
+    <a
+      href="#home"
+      class="back-to-top"
+      id="backToTop"
+      aria-label="Voltar ao topo"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
